@@ -92,6 +92,20 @@
 
                         <div class="col-span-6">
                             <label
+                                for="host"
+                                class="block text-sm font-medium leading-5 text-gray-700"
+                            >Host</label>
+                            <div class="mt-1 rounded-md shadow-sm">
+                                <input 
+                                    type="text"
+                                    v-model="host"
+                                    id="host"
+                                    class="form-input rounded block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-span-6">
+                            <label
                                 for="port"
                                 class="block text-sm font-medium leading-5 text-gray-700"
                             >Port</label>
