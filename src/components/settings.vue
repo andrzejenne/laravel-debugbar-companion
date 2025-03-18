@@ -150,6 +150,7 @@ export default {
             editor: 'vscode',
             followRequests: true,
             port: 2304,
+            host: "127.0.0.1",
         };
     },
 
@@ -165,11 +166,13 @@ export default {
             this.port = mainStorage.get("port");
             this.editor = mainStorage.get("editor");
             this.followRequests = mainStorage.get("followRequests");
+            this.host = mainStorage.get("host");
         },
 
         save() {
             mainStorage.set({
                 port: this.port,
+                host: this.host,
                 followRequests: this.followRequests,
                 editor: this.editor,
             });
